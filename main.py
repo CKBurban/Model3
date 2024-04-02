@@ -1,12 +1,18 @@
-def test():
-    a = 1
-    b = 2
-    print(a, b)
+def test(*args):
+    print('test')
+    print(args)
+    for i, arg in enumerate(args):
+        print("параметры:", i, arg)
 
 
-test()
-def test_2(a, b, c):
-    print(a, b, c)
+test(28, 1, 1977, 'Sergei')
 
+def faktorial(n):
+    if n == 1:
+        return 1
+        faktorial_n_minus_1 * faktorial(n=n -1)
 
-test_2(1, 2, 3)
+        return n * faktorial_n_minus_1
+
+print(faktorial(2))
+
